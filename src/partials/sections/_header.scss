@@ -1,0 +1,17 @@
+#header{
+    display: flex;
+    justify-content: center;
+    box-shadow: #0001 0 1rem 1rem ;
+
+    .header__homeLink{
+        float: left;
+    }
+    .header__logo{
+        height: 2rem;
+        margin: auto;
+        display: block;
+        img{
+            height: inherit;
+        }    
+    }
+}

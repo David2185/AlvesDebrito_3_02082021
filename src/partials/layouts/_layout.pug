@@ -1,0 +1,17 @@
+include ../../../data/#restaurants.pug
+
+doctype html 
+html(lang="fr")
+    head
+        meta(charset="utf-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1")
+        title Ohmyfood
+        link(rel="stylesheet", href="styles.css")
+        link(href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css',rel='stylesheet')
+        link(href='https://fonts.googleapis.com/css?family=Roboto:200,300|shrikhand',rel='stylesheet')    
+    body
+        #root
+            include ../sections/_header.pug
+            block content 
+            include ../sections/_footer.pug
+

@@ -1,0 +1,37 @@
+.goToHomeLink {
+  color: inherit;
+  display: block;
+  text-decoration: none;
+}
+
+#header {
+  display: flex;
+  justify-content: center;
+  box-shadow: #0001 0 1rem 1rem;
+}
+#header .header__homeLink {
+  float: left;
+}
+#header .header__logo {
+  height: 2rem;
+  margin: auto;
+  display: block;
+}
+#header .header__logo img {
+  height: inherit;
+}
+
+#localisation {
+  display: flex;
+  justify-content: center;
+}
+body {
+  font-family: Roboto, Arial, sans-serif;
+}
+
+.fas, .far, .fal, .fad {
+  display: flex;
+  justify-content: center;
+  width: 1.5em;
+  height: 1em;
+}

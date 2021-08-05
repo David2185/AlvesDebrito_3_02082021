@@ -2,12 +2,20 @@
 <html lang="fr">
   <head>
     <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>Ohmyfood</title>
+    <link rel="stylesheet" href="styles.css"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:200,300|shrikhand" rel="stylesheet"/>
   </head>
   <body>
     <div id="root">
-      <header> 
-        <h1>ohmyfood </h1>
+      <header id="header"><a class="goToHomeLink header__homeLink" href="index.html"><i class="fas fa-arrow-left"></i></a>
+        <h1 class="header__logo"><img src="images/logo/ohmyfood@2x.svg"/></h1>
       </header>
+      <section id="localisation"> 
+        <h2 class="localisation__place"> <i class="fa-map-marker-alt fas localisation__marker"></i>Paris, Belleville </h2>
+      </section>
       <ul> 
         <li>
           <p>La palette du goût</p><img src="jay-wennington-N_Y88TWmGwA-unsplash.jpg"/>
@@ -22,6 +30,7 @@
           <p>À la française</p><img src="louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"/>
         </li>
       </ul>
+      <footer> </footer>
     </div>
   </body>
 </html>

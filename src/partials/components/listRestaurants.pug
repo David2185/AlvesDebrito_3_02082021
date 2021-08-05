@@ -1,0 +1,6 @@
+mixin listRestaurants(restaurants)
+    ul 
+        each restaurant in restaurants 
+            li
+                p=restaurant.name  
+                img(src=restaurant.img+".jpg")
