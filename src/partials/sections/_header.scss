@@ -1,8 +1,9 @@
 #header{
     display: flex;
     justify-content: center;
-    box-shadow: #0001 0 1rem 1rem ;
-
+    box-shadow: $shadow;
+    z-index: 999;
+    position: relative;
     .header__homeLink{
         float: left;
     }

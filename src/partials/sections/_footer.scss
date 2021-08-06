@@ -1,0 +1,14 @@
+#footer{
+    background-color: $secondaryNeutralColor;
+    .footer__logo{
+        filter:invert(1);
+    }
+    .footer__links{
+        color: $secondaryColorText;
+        list-style: none;
+        .footer__links__link{
+            text-decoration: none;
+            color: inherit;
+        }
+    }
+}

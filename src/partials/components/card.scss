@@ -1,0 +1,47 @@
+.card{
+    box-shadow: $shadow;
+    border-radius: 1rem;
+    
+}
+
+ol {
+    counter-reset: item;
+    li.card{
+        &::before{
+            content:counter(item);
+            counter-increment: item;
+        }
+    }
+}
+
+
+// ol{
+//     counter-reset: item;
+//     li.card{
+//         padding: 1.5rem;
+//         background: #f6f6f6;
+//         margin-left: 1rem;
+//         .fas{
+//             color:#7e7e7e;
+//         }
+//         &:not(:last-child){
+//             margin-bottom:1.5rem;
+//         }
+//         &:before {
+//             content: counter(item) " ";
+//             counter-increment: item;
+//             position: absolute;
+//             width:2rem;
+//             height: 2rem;
+//             border-radius: 100%;
+//             background: #9356dc;
+//             color:#fff;
+//             display: flex;
+//             align-items: center;
+//             justify-content: center;
+//             margin-top: -.5rem;
+//             margin-left: -2.5rem;
+
+//         }
+//     }
+// }

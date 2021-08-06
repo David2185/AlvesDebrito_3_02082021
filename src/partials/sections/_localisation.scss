@@ -1,7 +1,9 @@
 #localisation{
     display: flex;
     justify-content: center;
+    background: $thirdaryNeutralColor;
     .localisation__place{
+        font-size: 1rem;
         .localisation__marker{
 
         }
