@@ -1,10 +1,17 @@
 #restaurantChoice{
-    .restaurant__slogan{
-        .restaurant__text{
+    display: grid;
+    justify-content: center;
+    &>*{
+        margin: auto;
+    }
+    .restaurantChoice__slogan{
+        .restaurantChoice__text{
 
         }
-        .restaurant__btn{
+        .restaurantChoice__btn{
              
         }
     }
 }
+
+

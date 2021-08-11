@@ -6,6 +6,7 @@
 
 body {
   font-family: Roboto, Arial, sans-serif;
+  font-weight: 300;
 }
 
 .fas, .far, .fal, .fad {
@@ -14,15 +15,49 @@ body {
   height: 1em;
 }
 
+#root {
+  background: #fafafa;
+}
+
+#_index h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
 .goToHomeLink {
   color: inherit;
   display: block;
   text-decoration: none;
 }
 
+.button {
+  border-radius: 1.5em;
+  font-size: 1.2rem;
+  color: #fff;
+  border: none;
+  background: linear-gradient(-5deg, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9));
+  display: inline-flex;
+  font-weight: 400;
+  width: max-content;
+  box-shadow: #0001 0 1rem 1rem;
+}
+
+a.button {
+  text-decoration: none;
+}
+
 .card {
   box-shadow: #0001 0 1rem 1rem;
   border-radius: 1rem;
+}
+.card i {
+  color: #7e7e7e;
+}
+.card.highlight {
+  background-color: #f2eafb !important;
+}
+.card.highlight i {
+  color: #9356DC;
 }
 
 ol {
@@ -31,6 +66,14 @@ ol {
 ol li.card::before {
   content: counter(item);
   counter-increment: item;
+  background: #9356DC;
+  border-radius: 100%;
+  width: 1.5em;
+  display: inline-flex;
+  height: 1.5em;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
 }
 
 #header {
@@ -59,6 +102,21 @@ ol li.card::before {
 }
 #localisation .localisation__place {
   font-size: 1rem;
+}
+#howToUse {
+  background: #FFF;
+  display: grid;
+}
+#howToUse .card {
+  background: #fafafa;
+}
+
+#restaurantChoice {
+  display: grid;
+  justify-content: center;
+}
+#restaurantChoice > * {
+  margin: auto;
 }
 #footer {
   background-color: #353535;

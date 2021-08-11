@@ -1,10 +1,13 @@
 @import "partials/layouts/layout";
+@import "partials/layouts/index";
 
 @import "partials/components/goToHomeLink";
+@import "partials/components/button.scss";
 @import "partials/components/card";
 
 @import "partials/sections/header";
 @import "partials/sections/localisation";
+@import "partials/sections/howToUse";
 @import "partials/sections/restaurantChoice";
 @import "partials/sections/footer";
 

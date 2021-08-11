@@ -3,10 +3,12 @@ extends _layout.pug
 include ../components/listRestaurants.pug
 
 block content
-    include ../sections/_localisation
-    include ../sections/_restaurantChoice
-    include ../sections/_howToUse
-    +listRestaurants(restaurants)
+    #_index
+        include ../sections/_localisation
+        include ../sections/_restaurantChoice
+        include ../sections/_howToUse
+        include ../sections/_restaurants
+        +listRestaurants(restaurants)
 
 
 

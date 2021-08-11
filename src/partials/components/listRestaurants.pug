@@ -1,6 +1,8 @@
 mixin listRestaurants(restaurants)
     ul 
         each restaurant in restaurants 
-            li
-                p=restaurant.name  
-                img(src=restaurant.img+".jpg")
+            li.card.restaurant 
+                img.restaurant__photo(src=restaurant.img+".jpg")
+                h3.restaurant__name=restaurant.name
+                p.restaurant__quarter=restaurant.quarter 
+                

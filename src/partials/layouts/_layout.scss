@@ -1,6 +1,9 @@
+$primaryNeutralColor:#fafafa;
+$primaryStrongColor:#9356DC;
 $secondaryNeutralColor:#353535;
 $secondaryColorText:#fff;
 $thirdaryNeutralColor:#f3f3f3;
+$fourdaryNeutralColor: #FFF;
 $shadow:#0001 0 1rem 1rem ;
 
 *{
@@ -11,10 +14,15 @@ $shadow:#0001 0 1rem 1rem ;
 
 body{
     font-family: Roboto, Arial, sans-serif;
+    font-weight: 300;
 }
 
 .fas,.far,.fal,.fad {
     text-align: center;
     width: 1.5em;
     height: 1em;
+}
+
+#root{
+    background: $primaryNeutralColor;
 }
