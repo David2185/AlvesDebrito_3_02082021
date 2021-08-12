@@ -1,6 +1,10 @@
 .card{
     box-shadow: $shadow;
     border-radius: 1rem;
+    img{
+        border-top-left-radius: inherit;
+        border-top-right-radius: inherit;
+    }
     i{
         color: #7e7e7e;
     }
