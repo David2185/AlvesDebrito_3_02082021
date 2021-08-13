@@ -1,8 +1,25 @@
 mixin listRestaurants(restaurants)
-    ul 
-        each restaurant in restaurants 
-            li.card.restaurant 
-                img.restaurant__photo(src=restaurant.img+".jpg")
-                h3.restaurant__name=restaurant.name
-                p.restaurant__quarter=restaurant.quarter 
-                
+    ul.listRestaurants  
+        each restaurant in restaurants
+            if restaurant.isNew 
+                li.card.listRestaurants__restaurant.listRestaurants__restaurant--isNew
+                    a.listRestaurants__restaurant__link(href="#") 
+                        img.listRestaurants__restaurant__link__photo(src=restaurant.img+".jpg")                       
+                        h3.listRestaurants__restaurant__link__name=restaurant.name
+                        p.listRestaurants__restaurant__link__quarter=restaurant.quarter
+                        i.fa-heart.far.listRestaurants__restaurant__favorite
+                        i.fa-heart.fas.listRestaurants__restaurant__favorite--hover
+                        
+
+            else 
+                li.card.listRestaurants__restaurant
+                    a.listRestaurants__restaurant__link(href="#") 
+                        img.listRestaurants__restaurant__link__photo(src=restaurant.img+".jpg")
+                        h3.listRestaurants__restaurant__link__name=restaurant.name
+                        p.listRestaurants__restaurant__link__quarter=restaurant.quarter
+                        i.fa-heart.far.listRestaurants__restaurant__favorite
+                        i.fa-heart.fas.listRestaurants__restaurant__favorite--hover
+                        
+
+
+

@@ -1,0 +1,38 @@
+.listRestaurants{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    .listRestaurants__restaurant{
+        position: relative;
+    }
+    .listRestaurants__restaurant--isNew::after{
+        content: "Nouveau";
+        font-weight: 500;
+        color: $thirdaryColorText;
+        background: $thirdaryBackgroundColor;
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+    }
+    .listRestaurants__restaurant__link{
+        text-decoration: none;
+        color:inherit;
+    }
+    .listRestaurants__restaurant__link__photo{
+        height: 5rem;
+    }
+    .listRestaurants__restaurant__favorite,.listRestaurants__restaurant__favorite--hover{
+        font-size: 2rem;
+        position: absolute;
+        bottom:1.5rem;
+        right: 1.5rem;
+
+    }
+    .listRestaurants__restaurant__favorite--hover{
+        opacity: 0;
+        &:hover{
+            opacity: 1;
+            color: linear-gradient(-5deg, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9));
+        }
+        
+    }
+}

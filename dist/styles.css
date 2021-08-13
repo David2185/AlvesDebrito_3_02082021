@@ -80,10 +80,50 @@ ol li.card::before {
   color: #fff;
 }
 
+li.card {
+  list-style: none;
+}
+
 img {
   object-fit: cover;
-  width: 6rem;
-  height: 3rem;
+  width: 100%;
+}
+
+.listRestaurants {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+.listRestaurants .listRestaurants__restaurant {
+  position: relative;
+}
+.listRestaurants .listRestaurants__restaurant--isNew::after {
+  content: "Nouveau";
+  font-weight: 500;
+  color: #1b6150;
+  background: #99e2d0;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+.listRestaurants .listRestaurants__restaurant__link {
+  text-decoration: none;
+  color: inherit;
+}
+.listRestaurants .listRestaurants__restaurant__link__photo {
+  height: 5rem;
+}
+.listRestaurants .listRestaurants__restaurant__favorite, .listRestaurants .listRestaurants__restaurant__favorite--hover {
+  font-size: 2rem;
+  position: absolute;
+  bottom: 1.5rem;
+  right: 1.5rem;
+}
+.listRestaurants .listRestaurants__restaurant__favorite--hover {
+  opacity: 0;
+}
+.listRestaurants .listRestaurants__restaurant__favorite--hover:hover {
+  opacity: 1;
+  color: linear-gradient(-5deg, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9));
 }
 
 #header {
@@ -98,6 +138,7 @@ img {
 }
 #header .header__logo {
   height: 2rem;
+  width: auto;
   margin: auto;
   display: block;
 }
@@ -115,9 +156,13 @@ img {
 }
 #howToUse {
   background: #FFF;
-  display: grid;
 }
-#howToUse .card {
+#howToUse .howToUse__steps {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  justify-content: center;
+}
+#howToUse .howToUse__steps__step {
   background: #fafafa;
 }
 
@@ -133,6 +178,8 @@ img {
 }
 #footer .footer__logo {
   filter: invert(1);
+  height: 1rem;
+  width: auto;
 }
 #footer .footer__links {
   color: #fff;

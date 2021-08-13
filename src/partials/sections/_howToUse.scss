@@ -1,9 +1,13 @@
 #howToUse{
     background: $fourdaryNeutralColor;
-    display: grid;
-    .card{
+    .howToUse__steps{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+        justify-content: center;
+    }
+    .howToUse__steps__step{
         background: $primaryNeutralColor;
-    
+        
     }
 }
 
