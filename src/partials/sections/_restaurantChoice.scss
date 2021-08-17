@@ -1,8 +1,10 @@
 #restaurantChoice{
     display: grid;
     justify-content: center;
+    text-align: center;
     &>*{
         margin: auto;
+        padding: .8rem;
     }
     .restaurantChoice__slogan{
         .restaurantChoice__text{
