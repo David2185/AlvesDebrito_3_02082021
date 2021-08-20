@@ -11,20 +11,26 @@
     color: $thirdaryColorText;
     background: $thirdaryBackgroundColor;
     position: absolute;
-    top: 2rem;
-    right: 1rem;
+    top: 5%;
+    right: .8rem;
+    padding: .5rem 1rem;
   }
   .listRestaurants__restaurant__link {
     text-decoration: none;
     color: inherit;
+    display: block;
   }
   .listRestaurants__restaurant__link__photo {
-    height: 5rem;
+    height: 10rem;
+  }
+
+  .listRestaurants__restaurant__text{
+    margin-left: 1rem;
   }
   .listRestaurants__restaurant__favorite,.listRestaurants__restaurant__favorite--hover {
     font-size: 2rem;
     position: absolute;
-    bottom: 1rem;
+    bottom: .5rem;
     right: 1.2rem;
   }
   .listRestaurants__restaurant__favorite--hover {
@@ -32,17 +38,8 @@
     &:hover {
       opacity: 1;
       background: linear-gradient((-5deg, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9)));
-      -webkit-background-clip: text;//si je retire le webkit chrome ne fonctionne pas 
+      background-clip: text;//si je retire le webkit chrome ne fonctionne pas 
       -webkit-text-fill-color: transparent;
     }
   }
 }
-
-
-// @media all and (max-width:850px) {
-//   .listRestaurants{
-//   display:grid;
-//   grid-template-columns:repeat(auto-fit, minmax(350px, 1fr));
-//   }
-
-// }

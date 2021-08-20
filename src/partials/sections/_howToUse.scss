@@ -7,7 +7,11 @@
     }
     .howToUse__steps__step{
         background: $primaryNeutralColor;
-        
+        display: flex;
+        height: 4rem;
+        width: auto;
+        align-items: center;
+        justify-content: flex-start;    
     }
 }
 
