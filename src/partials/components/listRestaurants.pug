@@ -2,7 +2,7 @@ mixin listRestaurants(restaurants)
     ul.listRestaurants  
         each restaurant in restaurants
             if restaurant.isNew 
-                li.card.listRestaurants__restaurant.listRestaurants__restaurant--isNew
+                li.card.card__restaurants.listRestaurants__restaurant.listRestaurants__restaurant--isNew
                     a.listRestaurants__restaurant__link(href="#") 
                         img.listRestaurants__restaurant__link__photo(src=restaurant.img+".jpg")
                         div.listRestaurants__restaurant__text                       
@@ -13,7 +13,7 @@ mixin listRestaurants(restaurants)
                         
 
             else 
-                li.card.listRestaurants__restaurant
+                li.card.card__restaurants.listRestaurants__restaurant
                     a.listRestaurants__restaurant__link(href="#") 
                         img.listRestaurants__restaurant__link__photo(src=restaurant.img+".jpg")
                         div.listRestaurants__restaurant__text     

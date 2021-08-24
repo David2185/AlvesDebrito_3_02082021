@@ -2,7 +2,6 @@
     box-shadow: $shadow;
     border-radius: 1rem;
     margin: .8rem;
-    overflow: hidden;
     img{
         border-top-left-radius: inherit;
         border-top-right-radius: inherit;
@@ -10,13 +9,6 @@
     i{
         color: #7e7e7e;
     }
-    &.highlight{
-        background-color: #f2eafb!important;
-        i{
-            color: $primaryStrongColor;
-        }
-    }
-    
 }
 
 ol {
@@ -33,6 +25,7 @@ ol {
             justify-content: center;
             align-items: center;
             color:$secondaryColorText;
+            transform: translateX(-50%);
         }
     }
 }
@@ -43,7 +36,9 @@ li.card{
     
 }
 
-
+.card__restaurants{
+    overflow: hidden;
+}
 
 
 
