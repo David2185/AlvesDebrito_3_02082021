@@ -7,15 +7,17 @@
     display: inline-flex;
     font-weight: 400;
     width: max-content;
-    box-shadow: $shadow; 
+    box-shadow: $shadow;
+    .button:hover{
+        color: lighten(#9356dc, 50%);
+        
+    }   
+        
+     
 }
 
 a.button{
     text-decoration: none;      
 }
 
-a.button:hover{
-    background-color: $fourdaryNeutralColor;
-    box-shadow: $shadow;   
-    }
 

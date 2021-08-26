@@ -1,6 +1,6 @@
 .listRestaurants {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   margin: 0 .4rem;
   .listRestaurants__restaurant {
     position: relative;
@@ -25,7 +25,7 @@
   }
 
   .listRestaurants__restaurant__text{
-    margin-left: 1rem;
+    margin: 1.2rem 0 1rem 1rem;
   }
   .listRestaurants__restaurant__favorite,.listRestaurants__restaurant__favorite--hover {
     font-size: 2rem;
@@ -40,6 +40,16 @@
       background: linear-gradient((-5deg, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9)));
       background-clip: text;//si je retire le webkit chrome ne fonctionne pas 
       -webkit-text-fill-color: transparent;
+      transition-duration: 1s;
     }
+  }
+}
+
+
+@media all and (min-width:850px){
+  .listRestaurants {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0 .4rem;
   }
 }

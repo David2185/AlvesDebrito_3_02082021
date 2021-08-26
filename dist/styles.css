@@ -55,14 +55,12 @@ body {
   width: max-content;
   box-shadow: #0001 0 1rem 1rem;
 }
+.button .button:hover {
+  color: white;
+}
 
 a.button {
   text-decoration: none;
-}
-
-a.button:hover {
-  background-color: #FFF;
-  box-shadow: #0001 0 1rem 1rem;
 }
 
 .card {
@@ -110,7 +108,7 @@ img {
 
 .listRestaurants {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   margin: 0 0.4rem;
 }
 .listRestaurants .listRestaurants__restaurant {
@@ -135,7 +133,7 @@ img {
   height: 10rem;
 }
 .listRestaurants .listRestaurants__restaurant__text {
-  margin-left: 1rem;
+  margin: 1.2rem 0 1rem 1rem;
 }
 .listRestaurants .listRestaurants__restaurant__favorite, .listRestaurants .listRestaurants__restaurant__favorite--hover {
   font-size: 2rem;
@@ -151,8 +149,16 @@ img {
   background: linear-gradient(-5deg, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9));
   background-clip: text;
   -webkit-text-fill-color: transparent;
+  transition-duration: 1s;
 }
 
+@media all and (min-width: 850px) {
+  .listRestaurants {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0 0.4rem;
+  }
+}
 #header {
   display: flex;
   justify-content: center;
@@ -204,8 +210,9 @@ img {
   align-items: center;
   justify-content: flex-start;
   cursor: pointer;
-  max-width: 280px;
-  min-width: 10em;
+  max-width: 300px;
+  min-width: 250px;
+  white-space: nowrap;
 }
 #howToUse .howToUse__steps__step:hover {
   background-color: #f2eafb;

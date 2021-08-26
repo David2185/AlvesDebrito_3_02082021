@@ -1,0 +1,28 @@
+{
+  "name": "p3_alvesdebrito_david",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prefix": "postcss ./dist/styles.css --use autoprefixer -d ./dist/styles.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/David2185/AlvesDebrito_3_02082021.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "browserslist": "last 4 versions",
+  "bugs": {
+    "url": "https://github.com/David2185/AlvesDebrito_3_02082021/issues"
+  },
+  "homepage": "https://github.com/David2185/AlvesDebrito_3_02082021#readme",
+  "dependencies": {
+    "postcss": "^8.3.6",
+    "postcss-cli": "^8.3.1"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.3.2"
+  }
+}
