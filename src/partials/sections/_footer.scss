@@ -21,3 +21,18 @@
         }
     }
 }
+
+.footer__container{
+    max-width: 1280px;
+    margin-left: 1rem;
+    display: grid;
+}
+
+@media all and (min-width:1500px){
+    .footer__container{
+        max-width: 1280px;
+        margin-left:7rem;
+        display: grid;
+    }
+
+}
