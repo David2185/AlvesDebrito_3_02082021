@@ -1,26 +1,26 @@
 mixin listRestaurants(restaurants)
     ul.listRestaurants  
-        each restaurant in restaurants
+        each restaurant, index in restaurants
             if restaurant.isNew 
                 li.card.card__restaurants.listRestaurants__restaurant.listRestaurants__restaurant--isNew
-                    a.listRestaurants__restaurant__link(href="#") 
+                    a.listRestaurants__restaurant__link(href="restaurant-"+index+".html") 
                         img.listRestaurants__restaurant__link__photo(src=restaurant.img+".jpg")
                         div.listRestaurants__restaurant__text                       
                             h3.listRestaurants__restaurant__link__name=restaurant.name
                             p.listRestaurants__restaurant__link__quarter=restaurant.quarter
                         i.fa-heart.far.listRestaurants__restaurant__favorite
-                        i.fa-heart.fas.listRestaurants__restaurant__favorite--hover
+                        i.fa-heart.fas.listRestaurants__restaurant__favorite--hover.favorite
                         
 
             else 
                 li.card.card__restaurants.listRestaurants__restaurant
-                    a.listRestaurants__restaurant__link(href="#") 
+                    a.listRestaurants__restaurant__link(href="restaurant-"+index+".html") 
                         img.listRestaurants__restaurant__link__photo(src=restaurant.img+".jpg")
                         div.listRestaurants__restaurant__text     
                             h3.listRestaurants__restaurant__link__name=restaurant.name
                             p.listRestaurants__restaurant__link__quarter=restaurant.quarter
                         i.fa-heart.far.listRestaurants__restaurant__favorite
-                        i.fa-heart.fas.listRestaurants__restaurant__favorite--hover
+                        i.fa-heart.fas.listRestaurants__restaurant__favorite--hover.favorite
                         
 
 

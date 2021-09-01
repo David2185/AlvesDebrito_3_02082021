@@ -1,0 +1,11 @@
+.favorite {
+  opacity: 0;
+  &:hover {
+    opacity: 1;
+    background: linear-gradient(
+      (-5deg, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9)));
+    background-clip: text; //si je retire le webkit chrome ne fonctionne pas
+    -webkit-text-fill-color: transparent;
+    transition-duration: 1s;
+  }
+}

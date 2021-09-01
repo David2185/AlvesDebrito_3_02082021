@@ -1,12 +1,15 @@
 #header {
-  display: flex;
-  justify-content: center;
   box-shadow: $shadow;
   z-index: 999;
-  position: relative;
   padding: 2rem;
   margin: auto;
+  .container {
+    display: flex;
+    justify-content: center;
+    position: relative;
+  }
 }
+
 .header__homeLink {
   float: left;
 }

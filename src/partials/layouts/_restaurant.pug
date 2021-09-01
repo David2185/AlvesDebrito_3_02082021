@@ -1,4 +1,26 @@
 extends _layout.pug
 
-block content 
-    h2 Restaurant
+include ../components/listDishes.pug
+
+block content
+    - var restaurant=restaurants[id]
+    #_restaurant
+        img(src=restaurant.img+".jpg", alt="exemple de plat du restaurant "+restaurant.name)
+        section.restaurant__menu.container
+            .restaurant__menu__head
+                h2=restaurant.name
+                i.fa-heart.far
+                i.fa-heart.fas.favorite
+            .restaurant__menu__dishes
+                article    
+                    h3 Entrées
+                    +listDishes(restaurant.starters)
+                article
+                    h3 Plats
+                    +listDishes(restaurant.maincourses)
+                article
+                    h3 Desserts
+                    +listDishes(restaurant.desserts)
+            .restaurant__menu__foot 
+                button.button Commander 
+

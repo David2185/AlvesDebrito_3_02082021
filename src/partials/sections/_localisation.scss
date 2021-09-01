@@ -4,7 +4,9 @@
     background: $thirdaryNeutralColor;
     padding: 1.5rem;
     .localisation__place{
-        font-size: 1rem;
+        font-size: 1.5rem;
+        display: flex;
+        justify-content: center;
         .localisation__marker{
 
         }

@@ -1,0 +1,24 @@
+#_restaurant img{
+    height: 18rem;
+}
+.restaurant__menu{
+    background:chartreuse;
+    margin-top: -5rem;
+    z-index: 999;
+    position: relative;
+    padding: 3rem;
+    border-top-left-radius: 2.5rem;
+    border-top-right-radius: 2.5rem;
+    &__head{
+        display: flex;
+    
+        flex-direction: row;
+        
+    }
+    &__dishes{
+
+    }
+    &__foot{
+
+    }
+}

@@ -2,6 +2,7 @@
     background: $fourdaryNeutralColor;
     .howToUse__steps{
         display: grid;
+        grid-gap: 2rem;
         grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
         justify-content: center;
         padding: 2rem;
@@ -32,3 +33,9 @@
     }
 }
 
+@media all and (max-width:1230px){
+    #howToUse .howToUse__steps{
+        display: block;
+        margin: auto;
+    }
+}
