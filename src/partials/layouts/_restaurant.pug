@@ -8,7 +8,7 @@ block content
         img(src=restaurant.img+".jpg", alt="exemple de plat du restaurant "+restaurant.name)
         section.restaurant__menu.container
             .restaurant__menu__head
-                h2=restaurant.name
+                h2.restaurant__menu--title=restaurant.name
                 i.fa-heart.far
                 i.fa-heart.fas.favorite
             .restaurant__menu__dishes

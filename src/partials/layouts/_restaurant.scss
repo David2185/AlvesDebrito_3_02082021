@@ -10,15 +10,24 @@
     border-top-left-radius: 2.5rem;
     border-top-right-radius: 2.5rem;
     &__head{
-        display: flex;
-    
-        flex-direction: row;
-        
+        display: grid;
+        // grid-template-columns: ;
+
+     
     }
     &__dishes{
-
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        grid-gap: 1rem;
+        justify-content: center;
+        
     }
     &__foot{
-
+        display: grid;
+        justify-content: center;
     }
+}
+
+.restaurant__menu--title{
+    font-family: "shrikhand",sans-serif;
 }
