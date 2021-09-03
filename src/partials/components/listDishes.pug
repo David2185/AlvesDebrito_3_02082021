@@ -1,6 +1,8 @@
 mixin listDishes(dishes)
     ul.listDishes
         each dish in dishes
-            h4=dish.name 
-            p=dish.description 
-            p=dish.price
+            .restaurant__menu--composition
+                h4=dish.name
+                .restaurant__menu--description
+                    span.restaurant__menu--text=dish.description 
+                    p=dish.price

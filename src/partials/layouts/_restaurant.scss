@@ -11,16 +11,12 @@
     border-top-right-radius: 2.5rem;
     &__head{
         display: grid;
-        // grid-template-columns: ;
-
-     
-    }
+        }
     &__dishes{
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
         grid-gap: 1rem;
         justify-content: center;
-        
     }
     &__foot{
         display: grid;
@@ -30,4 +26,25 @@
 
 .restaurant__menu--title{
     font-family: "shrikhand",sans-serif;
+}
+
+.restaurant__menu--composition{
+    border: 1px solid $fourdaryNeutralColor;
+    background: yellow;
+    border-radius:1rem;
+    padding: 1rem;
+    display: grid;
+    grid-gap: .8rem;
+    margin: 1rem;
+    .restaurant__menu--text{
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow:ellipsis;
+    }
+    .restaurant__menu--description{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        
+    }
 }
