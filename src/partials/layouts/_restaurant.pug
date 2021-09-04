@@ -13,13 +13,13 @@ block content
                 i.fa-heart.fas.favorite
             .restaurant__menu__dishes
                 article    
-                    h3 Entrées
+                    h3.restaurant__menu__dishes--cat ENTRÉES
                     +listDishes(restaurant.starters)
                 article
-                    h3 Plats
+                    h3.restaurant__menu__dishes--cat PLATS
                     +listDishes(restaurant.maincourses)
                 article
-                    h3 Desserts
+                    h3.restaurant__menu__dishes--cat DESSERTS
                     +listDishes(restaurant.desserts)
             .restaurant__menu__foot 
                 button.button Commander 
