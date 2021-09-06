@@ -2,6 +2,7 @@ include ../components/goToHomeLink
 
 header#header
     .container
-        +goToHomeLink("header__homeLink") 
+        if !index 
+            +goToHomeLink("header__homeLink") 
         h1.header__logo
             img(src="images/logo/ohmyfood@2x.svg" alt="Logo Ohmyfood")

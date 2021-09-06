@@ -4,7 +4,7 @@ mixin listRestaurants(restaurants)
             if restaurant.isNew 
                 li.card.card__restaurants.listRestaurants__restaurant.listRestaurants__restaurant--isNew
                     a.listRestaurants__restaurant__link(href="restaurant-"+index+".html") 
-                        img.listRestaurants__restaurant__link__photo(src=restaurant.img+".jpg")
+                        img.listRestaurants__restaurant__link__photo(src=restaurant.img+".jpg",alt="exemple de plat du restaurant "+restaurant.name)
                         div.listRestaurants__restaurant__text                       
                             h3.listRestaurants__restaurant__link__name=restaurant.name
                             p.listRestaurants__restaurant__link__quarter=restaurant.quarter
@@ -15,7 +15,7 @@ mixin listRestaurants(restaurants)
             else 
                 li.card.card__restaurants.listRestaurants__restaurant
                     a.listRestaurants__restaurant__link(href="restaurant-"+index+".html") 
-                        img.listRestaurants__restaurant__link__photo(src=restaurant.img+".jpg")
+                        img.listRestaurants__restaurant__link__photo(src=restaurant.img+".jpg",alt="exemple de plat du restaurant "+restaurant.name)
                         div.listRestaurants__restaurant__text     
                             h3.listRestaurants__restaurant__link__name=restaurant.name
                             p.listRestaurants__restaurant__link__quarter=restaurant.quarter

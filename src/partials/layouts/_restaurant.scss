@@ -11,6 +11,12 @@
   border-top-right-radius: 2.5rem;
   &__head {
     display: grid;
+    &__favorite,&__favorite--hover {
+      font-size: 2rem;
+      position: absolute;
+      top: 2.5rem;
+      right: 2.2rem;
+    }
   }
   &__dishes {
     display: grid;
@@ -26,6 +32,8 @@
 
 .restaurant__menu--title {
   font-family: "shrikhand", sans-serif;
+  font-size: 1.6rem;
+  padding-bottom: 1rem;
 }
 
 .restaurant__menu--composition {
