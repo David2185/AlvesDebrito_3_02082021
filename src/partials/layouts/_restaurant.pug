@@ -8,18 +8,18 @@ block content
         img(src=restaurant.img+".jpg", alt="exemple de plat du restaurant "+restaurant.name)
         section.restaurant__menu.container
             .restaurant__menu__head
-                h2.restaurant__menu--title=restaurant.name
+                h2.restaurant__menu__title=restaurant.name
                 i.fa-heart.far.restaurant__menu__head__favorite
                 i.fa-heart.fas.favorite.restaurant__menu__head__favorite--hover
             .restaurant__menu__dishes
                 article    
-                    h3.restaurant__menu__dishes--cat ENTRÉES
+                    h3.restaurant__menu__dishes__cat ENTRÉES
                     +listDishes(restaurant.starters)
                 article
-                    h3.restaurant__menu__dishes--cat PLATS
+                    h3.restaurant__menu__dishes__cat PLATS
                     +listDishes(restaurant.maincourses)
                 article
-                    h3.restaurant__menu__dishes--cat DESSERTS
+                    h3.restaurant__menu__dishes__cat DESSERTS
                     +listDishes(restaurant.desserts)
             .restaurant__menu__foot 
                 button.button Commander 

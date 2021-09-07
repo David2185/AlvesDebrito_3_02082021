@@ -1,16 +1,52 @@
-.restaurant__menu--animation{
-    transition: .5s;
-    animation: menu-animation 1.5s ;
+.dish {
+  background: $fourdaryNeutralColor;
+  display: grid;
+  grid-template-columns: 1fr 4rem;
+  cursor: pointer;
+  &--animation {
+    transition: 0.5s;
+    animation: menu-animation 1.5s;
+  }
+  .dish__text {
+    padding: 1rem;
+    display: grid;
+    grid-template-areas:
+      "name name"
+      "description price";
+    grid-template-columns: 1fr auto;
+    grid-gap: 0.8rem;;
+    &__name {
+      grid-area: name;
+    }
+    &__description {
+      grid-area: description;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+    &__price {
+      grid-area: price;
+    }
+  }
 }
 
-@keyframes menu-animation{
-    0%{
-        transform: translateY(50px);
-        opacity: 0;
-    }
-    100%{
-        transform: translateY(0);
-        opacity: 1;
-    }
+@keyframes menu-animation {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 
+.dish__checking {
+  background-color: $thirdaryBackgroundColor;
+  width: 4rem;
+  border-top-right-radius: inherit;
+  border-bottom-right-radius: inherit;
+
+  .dish__checking__circle {
+  }
+}

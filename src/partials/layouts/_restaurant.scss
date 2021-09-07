@@ -30,37 +30,15 @@
   }
 }
 
-.restaurant__menu--title {
+.restaurant__menu__title {
   font-family: "shrikhand", sans-serif;
   font-size: 1.6rem;
   padding-bottom: 1rem;
 }
 
-.restaurant__menu--composition {
-  border: 1px solid $fourdaryNeutralColor;
-  background: $fourdaryNeutralColor;
-  border-radius: 1rem;
-  padding: 1rem;
-  display: grid;
-  grid-gap: 0.8rem;
-  margin: 1rem;
-  cursor: pointer;
-  box-shadow: $shadow;
-  .restaurant__menu--text {
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    width: 100%;
-  }
-  .restaurant__menu--description {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    overflow: hidden;
-  }
-}
 
-.restaurant__menu__dishes--cat {
+
+.restaurant__menu__dishes__cat {
   width: 2.5rem;
   border-bottom: 3px solid #99e2d0;
   margin: 0.5rem 0 0 0;
