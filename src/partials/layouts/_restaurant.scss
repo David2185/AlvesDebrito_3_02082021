@@ -45,6 +45,7 @@
   grid-gap: 0.8rem;
   margin: 1rem;
   cursor: pointer;
+  box-shadow: $shadow;
   .restaurant__menu--text {
     overflow: hidden;
     white-space: nowrap;

@@ -1,8 +1,12 @@
 mixin listDishes(dishes)
     ul.listDishes
         each dish in dishes
-            li.restaurant__menu--composition
+            li.restaurant__menu--composition.restaurant__menu--animation
                 h4=dish.name
                 .restaurant__menu--description
                     span.restaurant__menu--text=dish.description 
                     p=dish.price
+            //- .restaurant__menu__desc--aniamtion 
+            //-         .restaurant__menu__desc--animationcircle 
+            //-             i.fas.fa-check-circle
+
