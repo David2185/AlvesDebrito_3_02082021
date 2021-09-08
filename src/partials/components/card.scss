@@ -1,59 +1,40 @@
-.card{
-    box-shadow: $shadow;
-    border-radius: 1rem;
-    margin: .8rem 0;
-    img{
-        border-top-left-radius: inherit;
-        border-top-right-radius: inherit;
-    }
-    i{
-        color: #7e7e7e;
-    }
+.card {
+  box-shadow: $shadow;
+  border-radius: 1rem;
+  margin: 0.8rem 0;
+  img {
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+  }
+  i {
+    color: #7e7e7e;
+  }
 }
 
 ol {
-    counter-reset: item;
-    li.card{
-        &::before{
-            content:counter(item);
-            counter-increment: item;
-            background: $primaryStrongColor;
-            border-radius: 100%;
-            width: 1.5em;
-            display: inline-flex;
-            height: 1.5em;
-            justify-content: center;
-            align-items: center;
-            color:$secondaryColorText;
-            transform: translateX(-50%);
-        }
+  counter-reset: item;
+  li.card {
+    &::before {
+      counter-increment: item;
+      content: counter(item);
+      background: $primaryStrongColor;
+      height: 1.5rem;
+      width: 1.5rem;
+      border-radius: 100px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #fff;
+      position: absolute;
+      left: -0.75rem;
     }
+  }
 }
 
-
-li.card{
-    list-style: none;
-    
+li.card {
+  list-style: none;
 }
 
-.card__restaurants{
-    overflow: hidden;
+.card__restaurants {
+  overflow: hidden;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

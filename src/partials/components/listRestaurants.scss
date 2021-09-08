@@ -2,6 +2,7 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   margin: 0 .4rem;
+  grid-gap: 2rem;
   .listRestaurants__restaurant {
     position: relative;
   }

@@ -7,19 +7,16 @@
         justify-content: center;
         padding: 2rem;
     }
-    .howToUse__steps__step{
-        background: $primaryNeutralColor;
+    .howToUse__steps__step{   
+        padding: 1.5rem;
+        margin: 1rem 0 1rem .75rem;
+        box-shadow: $shadow;
+        border-radius: 1.25rem;
+        background-color: $primaryNeutralColor;
         display: flex;
-        height: 3rem;
-        flex: 1;
-        margin: 0 0 2rem 2rem;
+        position: relative;
         align-items: center;
-        justify-content: flex-start;
         cursor: pointer;
-        max-width: 300px;
-        min-width: 250px;
-        white-space: nowrap;
-        padding: 2.5rem 0;    
     }
     .howToUse__steps__step:hover{
 
