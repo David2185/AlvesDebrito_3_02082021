@@ -45,3 +45,10 @@
   font-size: 1rem;
   padding-bottom: 1rem;
 }
+
+
+@media all and (max-width:380px){
+  .restaurant__menu__title{
+    font-size: 1.5rem;
+  }
+}

@@ -3,10 +3,16 @@
   display: grid;
   grid-template-columns: 1fr 4rem;
   cursor: pointer;
-  // &--animation {
-  //   transition: 0.5s;
-  //   animation: menu-appear 1.5s;
-  // }
+  &--animation {
+    transition: 0.5s;
+    animation: menu-appear 1.5s;
+    & > li:nth-child(2n) {
+      animation: menu-appear 1.3s ease-in-out;
+    }
+    & > li:last-child {
+      animation: menu-appear 1.8s ease-in-out;
+    }
+  }
   .dish__text {
     padding: 1rem;
     display: grid;
@@ -38,6 +44,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  visibility: hidden;
   .dish__checking__circle {
     .fa-check-circle {
       background-color: $thirdaryBackgroundColor;
@@ -45,7 +52,17 @@
     }
   }
 }
-
+.dish:hover {
+  .dish__checking {
+    animation: slide-position 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    visibility: visible;
+    transition: all 0.5s ease-in;
+    transform-origin: right;
+    .fa-check-circle {
+      transform: rotate(360deg);
+    }
+  }
+}
 @keyframes menu-appear {
   0% {
     transform: translateY(50px);
@@ -57,13 +74,13 @@
   }
 }
 
-.dish--animation {
-  transition: 0.5s;
-  animation: menu-appear .7s;
-  &>li:nth-child(2n){
-    animation:menu-appear 1.3s ease-in-out;
+@keyframes slide-position {
+  0% {
+    transform: translateX(30px);
+    opacity: 0;
   }
-  &>li:last-child{
-    animation:menu-appear 1.8s ease-in-out;
+  100% {
+    transform: translateX(-30px);
+    opacity: 1;
   }
 }
