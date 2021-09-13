@@ -59,8 +59,11 @@
 
 .dish--animation {
   transition: 0.5s;
-  animation: menu-appear 1s;
-  &--animation:nth-child(2n){
-    animation-delay: .3s;
+  animation: menu-appear .7s;
+  &>li:nth-child(2n){
+    animation:menu-appear 1.3s ease-in-out;
+  }
+  &>li:last-child{
+    animation:menu-appear 1.8s ease-in-out;
   }
 }
