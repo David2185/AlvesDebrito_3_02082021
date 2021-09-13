@@ -11,8 +11,9 @@
     text-decoration: none;
     padding: .8rem;  
     margin-top: 2rem; 
-    transition: 2s;   
-    &:hover{
+    transition: 2s; 
+    cursor: pointer;  
+    &:hover,:focus{
         background-color: #fff;
         box-shadow: .25rem .25rem 10px rgba(0,0,0,.5);
     } 

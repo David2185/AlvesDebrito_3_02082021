@@ -1,7 +1,7 @@
 mixin listDishes(dishes)
-    ul.listDishes
+    ul.listDishes.dish--animation
         each dish in dishes
-            li.card.dish.dish--animation
+            li.card.dish
                 .dish__text
                     h4.dish__text__name=dish.name
                     span.dish__text__description=dish.description 
