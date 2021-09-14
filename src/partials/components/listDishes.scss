@@ -38,7 +38,8 @@
 
 .dish__checking {
   background-color: $thirdaryBackgroundColor;
-  width: 4rem;
+  // width: 4rem;
+  width: 0;
   border-top-right-radius: inherit;
   border-bottom-right-radius: inherit;
   display: flex;
@@ -59,10 +60,12 @@
     transition: all 0.5s ease-in;
     transform-origin: right;
     .fa-check-circle {
+      transition: transform .5s;
       transform: rotate(360deg);
     }
   }
 }
+
 @keyframes menu-appear {
   0% {
     transform: translateY(50px);
@@ -76,11 +79,11 @@
 
 @keyframes slide-position {
   0% {
-    transform: translateX(30px);
+    width: 0;
     opacity: 0;
   }
   100% {
-    transform: translateX(-30px);
+    width: 4rem;
     opacity: 1;
   }
 }
