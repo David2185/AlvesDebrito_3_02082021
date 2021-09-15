@@ -13,7 +13,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  animation: loader-spinning 15s both;
+  animation: loader-spinning 13s both;
   margin: 0;
   padding: 0;
   font-family: "shrikhand";
@@ -45,7 +45,7 @@
   border-top-color: #9356dc;
   border-radius: 50px;
   animation: spin 1.5s linear infinite;
-  animation-duration: 3s;
+  animation-duration: 2.5s;
 }
 
 
