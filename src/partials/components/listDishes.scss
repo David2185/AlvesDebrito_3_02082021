@@ -93,8 +93,7 @@
 }
 .dish:hover,:focus {
   .dish__checking {
-    //animation: slide-position 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
-    width: 4rem;
+    width: 5rem;
     visibility: visible;
     .fa-check-circle {
       transition: transform .5s;
@@ -114,13 +113,3 @@
   }
 }
 
-@keyframes slide-position {
-  0% {
-    width: 0;
-    opacity: 0;
-  }
-  100% {
-    width: 4rem;
-    opacity: 1;
-  }
-}
