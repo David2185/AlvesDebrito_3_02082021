@@ -83,10 +83,12 @@
 @keyframes slide-position {
   0% {
     width: 0;
+    transform: translateX(-30px);
     opacity: 0;
   }
   100% {
     width: 4rem;
+    transform: translateX(30px);
     opacity: 1;
   }
 }
