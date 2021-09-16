@@ -1,6 +1,7 @@
 .favorite {
   opacity: 0;
   transition-duration: .5s;
+  cursor: pointer;
   &:hover,:focus {
     opacity: 1;
     background: linear-gradient(
