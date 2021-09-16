@@ -1,19 +1,53 @@
+.restaurant__menu__dishes article{
+  &:nth-child(1){
+    .dish--animation{
+      animation-delay: 3.7s;
+      li{
+
+        &:nth-child(1){ animation-delay: 3.7s; }
+        &:nth-child(2){ animation-delay: 3.9s; }
+        &:nth-child(3){ animation-delay: 4.1s; }
+        &:nth-child(4){ animation-delay: 4.3s; }
+      }
+    }
+  }
+  &:nth-child(2){
+    .dish--animation{
+      animation-delay: 4s;
+      li{
+        &:nth-child(1){ animation-delay: 4s; }
+        &:nth-child(2){ animation-delay: 4.2s; }
+        &:nth-child(3){ animation-delay: 4.4s; }
+        &:nth-child(4){ animation-delay: 4.6s; }
+      }
+    }
+  }
+  &:nth-child(3){
+    .dish--animation{
+      animation-delay: 4.3s;
+      li{
+        &:nth-child(1){ animation-delay: 4.3s; }
+        &:nth-child(2){ animation-delay: 4.5s; }
+        &:nth-child(3){ animation-delay: 4.7s; }
+        &:nth-child(4){ animation-delay: 4.9s; }
+      }
+    }
+  }
+}
+
 .dish {
   background: $fourdaryNeutralColor;
-  display: grid;
-  grid-template-columns: 1fr 4rem;
+  display: flex;
   cursor: pointer;
+  overflow: hidden;
   &--animation {
     transition: 0.5s;
-    animation: menu-appear 1.5s;
-    animation-delay: 3.7s;
-    & > li:nth-child(2n) {
-      animation: menu-appear 1.3s ease-in-out;
-      animation-delay: 3.7s;
-    }
-    & > li:last-child {
-      animation: menu-appear 1.8s ease-in-out;
-      animation-delay: 3.7s;
+    animation: menu-appear 1.5s forwards;
+    opacity: 0;
+
+    li {
+      opacity: 0;
+      animation: menu-appear 1.5s forwards;
     }
   }
   .dish__text {
@@ -25,6 +59,7 @@
     grid-template-columns: 1fr auto;
     grid-gap: 0.8rem;
     height: 6rem;
+    width: 100%;
     &__name {
       grid-area: name;
     }
@@ -43,12 +78,12 @@
 .dish__checking {
   background-color: $thirdaryBackgroundColor;
   width: 0;
-  border-top-right-radius: inherit;
-  border-bottom-right-radius: inherit;
   display: flex;
   justify-content: center;
   align-items: center;
   visibility: hidden;
+  transition: all 0.5s ease-in;
+  overflow: hidden;
   .dish__checking__circle {
     .fa-check-circle {
       background-color: $thirdaryBackgroundColor;
@@ -58,10 +93,9 @@
 }
 .dish:hover,:focus {
   .dish__checking {
-    animation: slide-position 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    //animation: slide-position 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+    width: 4rem;
     visibility: visible;
-    transition: all 0.5s ease-in;
-    transform-origin: right;
     .fa-check-circle {
       transition: transform .5s;
       transform: rotate(360deg);
@@ -83,12 +117,10 @@
 @keyframes slide-position {
   0% {
     width: 0;
-    transform: translateX(-30px);
     opacity: 0;
   }
   100% {
     width: 4rem;
-    transform: translateX(30px);
     opacity: 1;
   }
 }

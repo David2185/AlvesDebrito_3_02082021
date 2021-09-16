@@ -1,11 +1,12 @@
 .favorite {
   opacity: 0;
+  transition-duration: .5s;
   &:hover,:focus {
     opacity: 1;
     background: linear-gradient(
       (-5deg, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9)));
     background-clip: text;
     -webkit-text-fill-color: transparent;
-    transition-duration: 1s;
+    transition-duration: .5s;
   }
 }

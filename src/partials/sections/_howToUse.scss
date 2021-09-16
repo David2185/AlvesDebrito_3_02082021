@@ -17,12 +17,14 @@
         position: relative;
         align-items: center;
         cursor: pointer;
+        transition-duration: .5s;
     }
     .howToUse__steps__step:hover{
 
         background-color: #f2eafb;
         color:#000;
         box-shadow: $shadow;
+        
         i{
             color: $primaryStrongColor;
         }
