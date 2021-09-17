@@ -3,6 +3,7 @@
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   margin: 0 .4rem;
   grid-gap: 2rem;
+  transition-duration: .5s;
   .listRestaurants__restaurant {
     position: relative;
   }
