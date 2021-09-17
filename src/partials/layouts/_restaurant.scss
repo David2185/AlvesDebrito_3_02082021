@@ -11,10 +11,11 @@
   border-top-right-radius: 2.5rem;
   &__head {
     display: grid;
-    &__favorite,&__favorite--hover {
+    &__favorite,
+    &__favorite--hover {
       font-size: 2rem;
       position: absolute;
-      top: 2.5rem;
+      top: 3.5rem;
       right: 2.2rem;
     }
   }
@@ -36,19 +37,24 @@
   padding-bottom: 1rem;
 }
 
-
-
 .restaurant__menu__dishes__cat {
   width: 2.5rem;
-  border-bottom: 3px solid #99e2d0;
+  border-bottom: 3px solid $thirdaryBackgroundColor;
   margin: 0.5rem 0 0 0;
   font-size: 1rem;
   padding-bottom: 1rem;
 }
 
-
-@media all and (max-width:380px){
-  .restaurant__menu__title{
-    font-size: 1.5rem;
+@media all and (max-width: 380px) {
+  .restaurant__menu__head {
+    display: grid;
+    justify-content: flex-start;
+    &__favorite,
+    &__favorite--hover {
+      position: absolute;
+      right: 1rem;
+      top: 3.4rem;
+      font-size: 1.5rem;
+    }
   }
 }
