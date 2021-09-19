@@ -2,9 +2,6 @@
   opacity: 0;
   transition-duration: .5s;
   cursor: pointer;
-  li{
-    transition-duration: .5s
-  }
   &:hover,:focus {
     opacity: 1;
     background: linear-gradient(
