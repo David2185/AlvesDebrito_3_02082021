@@ -20,7 +20,6 @@
   font-size: 40px;
   color: #fff;
   text-align: center;
-
 }
 
 .loader {
@@ -49,7 +48,6 @@
   animation-duration: 2.5s;
 }
 
-
 @keyframes spin {
   0% {
     transform: rotate(0deg);
@@ -60,10 +58,9 @@
   }
 }
 
-@keyframes loader-spinning{
-  100%{
+@keyframes loader-spinning {
+  100% {
     opacity: 1;
     z-index: -9999;
-
   }
 }

@@ -1,50 +1,50 @@
-$primaryNeutralColor:#fafafa;
-$secondaryNeutralColor:#353535;
-$thirdaryNeutralColor:#f3f3f3;
-$fourdaryNeutralColor: #FFF;
-$primaryStrongColor:#9356DC;
-$secondaryColorText:#fff;
-$thirdaryColorText:#1b6150;
-$thirdaryBackgroundColor:#99e2d0;
-$primaryBackgroundForRestaurants:#f6f6f6;
+$primaryNeutralColor: #fafafa;
+$secondaryNeutralColor: #353535;
+$thirdaryNeutralColor: #f3f3f3;
+$fourdaryNeutralColor: #fff;
+$primaryStrongColor: #9356dc;
+$secondaryColorText: #fff;
+$thirdaryColorText: #1b6150;
+$thirdaryBackgroundColor: #99e2d0;
+$primaryBackgroundForRestaurants: #f6f6f6;
 
-$shadow:.25rem .25rem 10px rgba(0,0,0,.5);
-
+$shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.5);
 
 $sectiontitle: 2rem 0 1rem 1rem;
 
-
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-body{
-    font-family: Roboto, Arial, sans-serif;
-    font-weight: 300;
+body {
+  font-family: Roboto, Arial, sans-serif;
+  font-weight: 300;
 }
 
-.fas,.far,.fal,.fad {
-    text-align: center;
-    width: 1.5em;
-    height: 1em;
+.fas,
+.far,
+.fal,
+.fad {
+  text-align: center;
+  width: 1.5em;
+  height: 1em;
 }
 
-#root{
-    background: $primaryNeutralColor;
-    scroll-behavior: smooth;
-    
+#root {
+  background: $primaryNeutralColor;
+  scroll-behavior: smooth;
 }
 
-.container{
-    max-width: 1280px;
-    margin: auto;
-    width: 100%;
+.container {
+  max-width: 1280px;
+  margin: auto;
+  width: 100%;
 }
 
-#restaurants{
-    height: auto;
-    margin-top: 1rem;
-    margin-bottom: 2rem;
+#restaurants {
+  height: auto;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
 }

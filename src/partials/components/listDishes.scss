@@ -1,35 +1,58 @@
-.restaurant__menu__dishes article{
-  &:nth-child(1){
-    .dish--animation{
+.restaurant__menu__dishes article {
+  &:nth-child(1) {
+    .dish--animation {
       animation-delay: 3.7s;
-      li{
-
-        &:nth-child(1){ animation-delay: 3.7s; }
-        &:nth-child(2){ animation-delay: 3.9s; }
-        &:nth-child(3){ animation-delay: 4.1s; }
-        &:nth-child(4){ animation-delay: 4.3s; }
+      li {
+        &:nth-child(1) {
+          animation-delay: 3.7s;
+        }
+        &:nth-child(2) {
+          animation-delay: 3.9s;
+        }
+        &:nth-child(3) {
+          animation-delay: 4.1s;
+        }
+        &:nth-child(4) {
+          animation-delay: 4.3s;
+        }
       }
     }
   }
-  &:nth-child(2){
-    .dish--animation{
+  &:nth-child(2) {
+    .dish--animation {
       animation-delay: 4s;
-      li{
-        &:nth-child(1){ animation-delay: 4s; }
-        &:nth-child(2){ animation-delay: 4.2s; }
-        &:nth-child(3){ animation-delay: 4.4s; }
-        &:nth-child(4){ animation-delay: 4.6s; }
+      li {
+        &:nth-child(1) {
+          animation-delay: 4s;
+        }
+        &:nth-child(2) {
+          animation-delay: 4.2s;
+        }
+        &:nth-child(3) {
+          animation-delay: 4.4s;
+        }
+        &:nth-child(4) {
+          animation-delay: 4.6s;
+        }
       }
     }
   }
-  &:nth-child(3){
-    .dish--animation{
+  &:nth-child(3) {
+    .dish--animation {
       animation-delay: 4.3s;
-      li{
-        &:nth-child(1){ animation-delay: 4.3s; }
-        &:nth-child(2){ animation-delay: 4.5s; }
-        &:nth-child(3){ animation-delay: 4.7s; }
-        &:nth-child(4){ animation-delay: 4.9s; }
+      li {
+        &:nth-child(1) {
+          animation-delay: 4.3s;
+        }
+        &:nth-child(2) {
+          animation-delay: 4.5s;
+        }
+        &:nth-child(3) {
+          animation-delay: 4.7s;
+        }
+        &:nth-child(4) {
+          animation-delay: 4.9s;
+        }
       }
     }
   }
@@ -91,12 +114,13 @@
     }
   }
 }
-.dish:hover,:focus {
+.dish:hover,
+:focus {
   .dish__checking {
     width: 5rem;
     visibility: visible;
     .fa-check-circle {
-      transition: transform .5s;
+      transition: transform 0.5s;
       transform: rotate(360deg);
     }
   }
@@ -112,4 +136,3 @@
     opacity: 1;
   }
 }
-

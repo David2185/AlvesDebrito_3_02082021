@@ -1,9 +1,9 @@
 .listRestaurants {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  margin: 0 .4rem;
+  margin: 0 0.4rem;
   grid-gap: 2rem;
-  transition-duration: .5s;
+  transition-duration: 0.5s;
   .listRestaurants__restaurant {
     position: relative;
   }
@@ -14,8 +14,8 @@
     background: $thirdaryBackgroundColor;
     position: absolute;
     top: 5%;
-    right: .8rem;
-    padding: .5rem 1rem;
+    right: 0.8rem;
+    padding: 0.5rem 1rem;
   }
   .listRestaurants__restaurant__link {
     text-decoration: none;
@@ -26,10 +26,11 @@
     height: 10rem;
   }
 
-  .listRestaurants__restaurant__text{
+  .listRestaurants__restaurant__text {
     margin: 1.2rem 0 1rem 1rem;
   }
-  .listRestaurants__restaurant__favorite,.listRestaurants__restaurant__favorite--hover {
+  .listRestaurants__restaurant__favorite,
+  .listRestaurants__restaurant__favorite--hover {
     font-size: 2rem;
     position: absolute;
     bottom: 1.5rem;
@@ -37,11 +38,10 @@
   }
 }
 
-
-@media all and (min-width:850px){
+@media all and (min-width: 850px) {
   .listRestaurants {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    margin: 0 .4rem;
+    margin: 0 0.4rem;
   }
 }
